@@ -10,7 +10,7 @@ In TheWebConf'20.*
 ```
 @inproceedings{chen2020efficient,
   title={Efficient Non-Sampling Factorization Machines for Optimal Context-Aware Recommendation},
-  author={Chen, Chong and Zhang, Min and Ma, Weizhi and Zhang, Yongfeng and Liu, Yiqun and Ma, Shaoping},
+  author={Chen, Chong and Zhang, Min and Ma, Weizhi and Liu, Yiqun and Ma, Shaoping},
   booktitle={Proceedings of The Web Conference},
   year={2020},
 }
