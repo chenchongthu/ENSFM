@@ -16,7 +16,7 @@ def parse_args():
                         help='batch_size')
     parser.add_argument('--epochs', type=int, default=501,
                         help='Number of epochs.')
-    parser.add_argument('--embed_size', type=int, default=8,
+    parser.add_argument('--embed_size', type=int, default=64,
                         help='Embedding size.')
     parser.add_argument('--lr', type=float, default=0.05,
                         help='Learning rate.')
