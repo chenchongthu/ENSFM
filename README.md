@@ -40,6 +40,19 @@ Train and evaluate the model:
 ```
 python ENSFM.py
 ```
+## Suggestions for parameters
+
+Two important parameters need to be tuned for different datasets, which are:
+```
+parser.add_argument('--dropout', type=float, default=1,
+                        help='dropout keep_prob')
+parser.add_argument('--negative_weight', type=float, default=0.5,
+                        help='weight of non-observed data')
+```
+
+Specifically, we suggest to tune "negative_weight" among \[0.001,0.005,0.01,0.02,0.05,0.1,0.2,0.5]. Generally, this parameter is related to the sparsity of dataset. If the dataset is more sparse, then a small value of negative_weight may lead to a better performance.
 
 
-First Update Date: Jan. 16, 2020
+Generally, the performance of our ENSFM is much better than existing state-of-the-art FM models like NFM, DeepFM, and CFM on Top-K recommendation task. You can also contact us if you can not tune the parameters properly.
+
+First Update Date: May 19, 2020
